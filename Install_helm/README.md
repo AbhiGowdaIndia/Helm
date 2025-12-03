@@ -13,7 +13,7 @@
     * Downloads Helm’s GPG signing key
     * The key ensures the packages are trusted and not tampered
     * Pipes (|) the downloaded key directly into apt-key add -
-    *  - means "read from stdin"
+    *  \- means "read from stdin"
     * Installs support for HTTPS-based repositories in apt
     * Adds the Helm repository URL to apt’s repo list
     * Updates apt package index
