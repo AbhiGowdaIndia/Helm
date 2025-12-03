@@ -26,3 +26,54 @@
 
 ### 📁 Directory & File Explanation
 
+#### Chart.yaml
+
+* Metadata about the chart:
+
+  * Chart name
+
+  * Version
+
+  * App version
+
+  * Description
+
+  * Maintainers
+
+#### values.yaml
+
+* Default configuration values used by templates.
+
+#### values.production.yaml (Optional)
+
+* Environment-specific overrides (prod/dev/stage).
+
+#### templates/
+
+* This folder contains all Kubernetes manifest templates.
+
+* Typical files:
+  
+  * deployment.yaml	
+
+  * service.yaml	
+
+  * ingress.yaml	
+
+  * configmap.yaml	
+
+  * secrets.yaml	
+
+  * hpa.yaml	
+
+  * _helpers.tpl	
+
+  * NOTES.txt
+
+#### charts/
+
+* Used only when your chart depends on other charts
+
+#### README.md
+
+* Documentation for installation, usage, and configuration.
