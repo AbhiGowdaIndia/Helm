@@ -10,8 +10,9 @@
 
   Example:  
 
-    **helm repo add bitnami https://charts.bitnami.com/bitnami**
-    **helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx**
+    **helm repo add bitnami https://charts.bitnami.com/bitnami**  
+    **helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx**  
+    **helm repo add eks https://aws.github.io/eks-charts**
 
 * 
            
