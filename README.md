@@ -1,6 +1,7 @@
 # Helm
 
 * **Helm is a package manager for Kubernetes applications thatincludes templeting and lifecycle management functionality.** 
+* **Think of Helm as the "APT" or "YUM" for Kubernetes. Just like APT helps you manage software packages on a Linux system, Helm helps you manage applications on a Kubernetes cluster.**  
 * **Helm uses a packaging format called carts.**  
 * **A chart is acollection of files that describes a related set of kubernetes resources.**  
 
