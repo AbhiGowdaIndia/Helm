@@ -8,7 +8,7 @@
 
 * **A typical Helm chart has the following structure:**
 
-mychart/  
+**mychart/**    
 ├── Chart.yaml   
 ├── values.yaml  
 ├── values.production.yaml        # (optional) env-specific values  
@@ -23,3 +23,6 @@ mychart/
 │   ├── _helpers.tpl              # helper template functions  
 │   └── NOTES.txt                 # post-install notes  
 └── README.md                     # chart documentation  
+
+### 📁 Directory & File Explanation
+
