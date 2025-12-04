@@ -108,7 +108,6 @@
     * Helm reads the version from Chart.yaml  
   
   * To specify the output directory
-
     **helm package ./payment -d ./build**    
     * The .tgz will be stored inside the build/ folder.
 
@@ -131,9 +130,9 @@
 
   * This generates:
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.yaml  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;payment-0.1.0.tgz  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orders-1.2.0.tgz  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.yaml  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;payment-0.1.0.tgz  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orders-1.2.0.tgz  
 
 * To create a local Helm repo
 
@@ -144,7 +143,7 @@
 
   * Keep your .tgz files + index.yaml in "gh-pages" branch   (We need to have a git branch with name "gh-pages")
   
-  **helm repo add myrepo https://\<username>.github.io/\<repo>/**
+    **helm repo add myrepo https://\<username>.github.io/\<repo>/**
 
 * To remove a Helm release from your Kubernetes cluster.
 
