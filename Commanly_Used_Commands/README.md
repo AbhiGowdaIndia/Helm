@@ -194,9 +194,9 @@
 
   **helm upgrade <release-name> <chart-path-or-chart-name> [flags]**
 
-    * **<release-name> →** the name of the existing release
+    * **\<release-name> →** the name of the existing release
 
-    * **<chart-path-or-chart-name> →** local chart folder or chart from a repo
+    * **\<chart-path-or-chart-name> →** local chart folder or chart from a repo
 
   * Upgrade using custom values
 
