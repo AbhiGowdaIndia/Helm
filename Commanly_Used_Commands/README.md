@@ -162,8 +162,53 @@
     * Keep the release history (don’t delete stored metadata)  
       **helm uninstall payment --keep-history**
 
+* To manage chart dependencies in Helm.
 
+  **helm dependency <command> <chart-directory>**
 
+  * Where <command> can be:
+
+    * update
+
+    * build
+
+    * list
+
+    * add
+
+    * update
+
+  * To shows the dependencies of a chart
+
+    **helm dependency list ./mychart**
+  
+  * To downloads and updates all dependencies defined in Chart.yaml
+
+    **helm dependency update ./mychart**
+
+  * Builds dependencies from charts/ folder if Chart.lock exists.
+
+    **helm dependency build ./mychart**
+
+* To to update an existing Helm release with a new chart or new values without uninstalling it.
+
+  **helm upgrade <release-name> <chart-path-or-chart-name> [flags]**
+
+    * **<release-name> →** the name of the existing release
+
+    * **<chart-path-or-chart-name> →** local chart folder or chart from a repo
+
+  * Upgrade using custom values
+
+    **helm upgrade payment ./payment -f values-prod.yaml -n dev**
+
+  * Upgrade using --set
+
+    **helm upgrade payment ./payment --set replicaCount=3 -n dev**
+
+  * Upgrade from a chart repo
+
+    **helm upgrade my-nginx bitnami/nginx --version 13.0.0**
 
 
            
