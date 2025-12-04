@@ -104,13 +104,14 @@
 
   Example:  
     **helm package ./payment**  
-    * This will package our chart directory to "payment-0.1.0.tgz"  
-    * Helm reads the version from Chart.yaml  
-  
-  * To specify the output directory
-    **helm package ./payment -d ./build**    
+      * This will package our chart directory to "payment-0.1.0.tgz"  
+      * Helm reads the version from Chart.yaml  
+    
+  * To specify the output directory  
+    
     * The .tgz will be stored inside the build/ folder.
-
+    **helm package ./payment -d ./build**     
+    
   * To update dependencies before packaging
 
     **helm dependency update ./payment**   
