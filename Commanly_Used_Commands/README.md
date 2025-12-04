@@ -109,8 +109,8 @@
     
   * To specify the output directory  
     
-    * The .tgz will be stored inside the build/ folder.
-    **helm package ./payment -d ./build**     
+    * The .tgz will be stored inside the build/ folder.  
+      **helm package ./payment -d ./build**     
     
   * To update dependencies before packaging
 
